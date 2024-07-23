@@ -1,0 +1,147 @@
+/* variables */
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+/* fuentes */
+@font-face {
+    font-family: 'youngSerif', sans-serif;
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit', sans-serif;
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+/* general */
+html {
+    background-color: var(--eggshell);
+    font-family: 'youngSerif', sans-serif;
+}
+
+body {
+    line-height: 2;
+    font-size: 16px;
+}
+
+main {
+    background-color: var(--white);
+    margin: 15rem;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+p, ol li {
+    text-align: justify;
+}
+
+/* header */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+/* section intro */
+h1 {
+    font-size: xx-large;
+}
+
+.darkRaspberry h3 {
+    color: var(--darkRaspberry);
+}
+
+/* section preparation */
+.preparation {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.preparation::before {
+    background-color: var(--darkRaspberry);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    z-index: -1;
+    border-radius: 2rem;
+}
+/* end header */
+
+.nutmeg h2,
+td.nutmeg {
+    color: var(--nutmeg);
+}
+
+/* section ingredients */
+ol li::marker,
+ul li::marker {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+/* section nutrition */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 2px solid var(--lightGrey);
+}
+
+td.nutmeg {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 975px) {
+    main {
+        margin: 6rem;
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    main {
+        margin: 5rem;
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    main {
+        margin: 4rem;
+        padding: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        line-height: normal;
+        font-size: 12px;
+    }
+
+    main {
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+    }
+}
