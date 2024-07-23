@@ -110,21 +110,21 @@ td.nutmeg {
 
 @media screen and (max-width: 975px) {
     main {
-        margin: 6rem;
+        margin: 5rem;
         padding: 4rem;
     }
 }
 
 @media screen and (max-width: 675px) {
     main {
-        margin: 5rem;
+        margin: 4rem;
         padding: 3rem;
     }
 }
 
 @media screen and (max-width: 525px) {
     main {
-        margin: 4rem;
+        margin: 3rem;
         padding: 2rem;
     }
 
